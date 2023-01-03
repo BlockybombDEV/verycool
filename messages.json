@@ -1,0 +1,11 @@
+{
+    "ban": "has been banned from the server",
+    "bandm": "you have been banned from",
+    "unbandm": "you have been unbanned from",
+    "unban": "has been unbanned from the server",
+    "kick": "has been kicked",
+    "kickdm": "you have been kicked",
+    "higherRole": "Could not take action on that user due to having a higher role than you",
+    "Mute": "",
+    "Warn": ""
+}
