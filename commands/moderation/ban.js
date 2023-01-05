@@ -22,6 +22,7 @@ module.exports = {
         const member = interaction.guild.members.cache.get(target.id);
         const Reason = interaction.options.getString('reason') ?? 'No reason provided';
         
+        // embeds
         const FailEmbed = new EmbedBuilder()
         .setTitle("❌ Could not ban target!")
         .setColor('Red')
@@ -38,7 +39,7 @@ module.exports = {
             { name: "Banned by", value: `${interaction.user.tag}` }
         )
         .setTimestamp(Date.now())
-
+        
         try {
             await interaction.guild.bans.create(target.id)
 

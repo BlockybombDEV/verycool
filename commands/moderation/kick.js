@@ -21,7 +21,7 @@ module.exports = {
         const target = interaction.options.getUser('target');
         const member = await interaction.guild.members.fetch(target.id);
         const reason = interaction.options.getString('reason') ?? 'No reason provided';
-
+        // embeds
         const FailEmbed = new EmbedBuilder()
         .setTitle("❌ Could not kick target!")
         .setColor('Red')
@@ -43,7 +43,7 @@ module.exports = {
             { name: "Kicked by", value: `${interaction.user.tag}` }
         )
         .setTimestamp(Date.now())
-
+        // checks if kick is possible
         if (member.roles.highest > interaction.member.roles.highest)
             return interaction.reply({embeds: [RoleEmbed], ephemeral: true })
 

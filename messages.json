@@ -6,6 +6,9 @@
     "kick": "has been kicked",
     "kickdm": "you have been kicked",
     "higherRole": "Could not take action on that user due to having a higher role than you",
-    "Mute": "",
-    "Warn": ""
+    "joinMessage": "has joined the server",
+    "leaveMessage": "has left the server",
+    "Warn": "has been warned",
+    "Warnremove": "has been removed",
+    "report": "New message reported by"
 }
